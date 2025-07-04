@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Posicionamento estático e relativo</title>
+        <style>
+            body{
+                background: #007fc7;
+            }
+
+            #container{
+                background: #FFF;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            h1{
+            }
+
+            p{
+                text-align: justify;
+                width: 300px;
+            }
+
+            .relative{
+                border: 1px solid red;
+                position: relative;
+                bottom: 200px;
+                left: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Posicionamentos</h1>
+            <p>
+                P1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat, illum nisi, nulla quam, omnis et ipsa laudantium porro similique iste quos dicta explicabo voluptate vel reprehenderit consectetur eligendi accusantium.
+            </p>
+            <p class="relative">
+                P2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat, illum nisi, nulla quam, omnis et ipsa laudantium porro similique iste quos dicta explicabo voluptate vel reprehenderit consectetur eligendi accusantium.
+            </p>
+            <p>
+                P3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugiat, illum nisi, nulla quam, omnis et ipsa laudantium porro similique iste quos dicta explicabo voluptate vel reprehenderit consectetur eligendi accusantium.
+            </p>
+        </div>
+    </body>
+</html>

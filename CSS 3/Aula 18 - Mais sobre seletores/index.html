@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Mais sobre seletores</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            /* Seletor Universal *//*
+            *{
+                border: 1px solid red;
+            }
+
+            *//* Seletor de Texto *//*
+            h1{
+                color: green;
+            }
+
+            *//* Seletor de Classe *//*
+            .verde{
+                color:green;
+            }
+
+            p.verde{
+                color:green;
+            }
+
+            *//* Classe de ID *//*
+            #cabecalho{
+                border: 1px solid blue;
+            }
+
+            *//* Seletor de Filho *//*
+            li>a {
+                color: red;
+                text-decoration: none;
+            }
+
+            *//* Seletor de Descendente *//*
+            p a {
+                color: green;
+            }
+
+            *//* Seletor de Irmão Adjacente *//*
+            h1+p{
+                color: red;
+            }
+
+            *//* Seletor de Irmão Geral */
+            h1~p{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li>
+                <span> <a href=""> Home </a> </span>
+            </li>
+            <li>
+                <a href=""> Sobre </a>
+            </li>
+        </ul>
+
+        <div id = "cabecalho">
+            <h1>Título da Página</h1>
+            <p> Conteúdo da Página</p>
+            <p> Conteúdo da Página 2 </p>
+        </div>
+
+        <a href=""> Link Teste </a>
+
+        <p>
+            Paragrafo <a href=""> Clique aqui</a>
+        </p>
+
+        <span class="verde"> Teste Span </span>
+        <p> Teste </p>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Estilizando tabelas</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+            }
+
+            table{
+                width: 900px;
+                border-collapse: separate;
+            }
+
+            th, td{
+                padding: 7px;
+            }
+
+            th{
+                text-transform: uppercase;
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #111;
+                text-align: left;
+                font-size: 90%;
+                letter-spacing: 0.1em;
+            }
+
+            tr.alternado{
+                background-color: #efefef;
+            }
+
+            .numero{
+                text-align: right;
+            }
+
+            tr:hover{
+                background-color: #c3e6e5;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Estilizando tabelas</h2>
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>001</th>
+                <td>Portátil</th>
+                <td class="numero">890€</th>
+            </tr>
+            <tr class="alternado">
+                <td>002</th>
+                <td>Televisão</th>
+                <td class="numero">450€</th>
+            </tr>
+            <tr>
+                <td>003</th>
+                <td>Iphone</th>
+                <td class="numero">1065€</th>
+            </tr>
+            <tr class="alternado">
+                <td>004</th>
+                <td>Superte Telemóvel</th>
+                <td class="numero">14,4€</th>
+            </tr>
+        </table>
+    </body>
+</html>

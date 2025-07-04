@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Coluna Falsa</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                background: #f2f2f2;
+            }
+
+            p{
+                text-align: justify;
+            }
+
+            #container{
+                width: 960px;
+                margin: 0 auto;
+                background: #FFF url(../Imagens/coluna.png) repeat-y left top;
+                min-width: 820px;
+                max-width: 1280;
+            }
+
+            #marca{
+                background: #225992 url(../Imagens/cabecalho2.jpg) no-repeat center;
+                line-height: 200px;
+                text-align: center;
+                height: 200px;
+            }
+
+            #conteudo{
+                width: 75%;
+                float: right;
+            }
+
+            #conteudo-principal{
+                width: 63%;
+                float: left;
+            }
+
+            img.img-noticia{
+                width: 90%;
+                padding: 2%;
+                max-width: 600px;
+            }
+
+            #conteudo-secundario{
+                width: 34%;
+                float: right;
+                background: #d1d1d1;
+                padding: 0 5px;
+            }
+
+            #navegacao {
+                width: 23%;
+                float: left;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            #navegacao ul{
+                list-style-type: none;
+            }
+
+            #navegacao li{
+                padding: 5px 0px;
+            }
+
+            #navegacao li a{
+                text-decoration: none;
+                color: #000;
+            }
+            a:hover{
+                color: gold;
+                background-color: goldenrod;
+            }
+
+            #rodape{
+                 clear: both;
+                 background: #c4c4c4;
+                 padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "container">
+            <div id="marca">Marca</div>
+            <div id="conteudo">
+                <div id="conteudo-principal">
+                    <h2>Conteúdo Principal</h2>
+                    <img src="../Imagens/natureza.jpg" class="img-noticia">
+                    <p>consectetur adipisicing elit. Esse consequuntur dolorum modi cum reprehenderit reiciendis? Ipsa vel corrupti voluptatibus atque, esse beatae, numquam quod totam, ad aliquid laudantium sit nemo?</p>
+                    <h2>Conteúdo Principal</h2>
+                    <p>consectetur adipisicing elit. Esse consequuntur dolorum modi cum reprehenderit reiciendis? Ipsa vel corrupti voluptatibus atque, esse beatae, numquam quod totam, ad aliquid laudantium sit nemo?</p>
+                </div>
+                <div id="conteudo-secundario">
+                    <h2>Conteúdo Secundário </h2>
+                    <p>consectetur adipisicing elit. Esse consequuntur dolorum modi cum reprehenderit reiciendis? Ipsa vel corrupti voluptatibus atque, esse beatae, numquam quod totam, ad aliquid laudantium sit nemo?</p>
+                </div>
+            </div>
+            <div id="navegacao">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Desporto</a></li>
+                    <li><a href="">Famosos</a></li>
+                    <li><a href="">Carros</a></li>
+                </ul>
+            </div>
+            <div id="rodape">Rodapé</div>
+        </div>
+    </body>
+</html>
