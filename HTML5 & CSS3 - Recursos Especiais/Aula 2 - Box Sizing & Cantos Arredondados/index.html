@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Box Sizing & Cantos arrendondados</title>
+
+        <link rel="stylesheet" href="../Aula 1 - Normalize CSS/normalize.css">
+
+        <style>
+            #caixa1{
+                width: 300px;
+                height: 300px;
+                background-color: #b9c941;
+                padding: 50px;
+                margin: 20px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-border-radius: 10px 50px 80px 100px;
+                -moz-border-radius: 10px 50px 80px 100px;
+                border-radius: 10px 50px 80px 100px;
+            }
+
+            #caixa2{
+                width: 300px;
+                height: 300px;
+                background-color: #b9c941;
+                margin: 20px;
+            }
+
+            .arredondamento{
+                border-radius: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="caixa1">
+            <h1>Título da Caixa</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo voluptatum dolores sapiente asperiores itaque quo, odio vitae nulla magni unde sequi aliquid animi ipsam quis officia, laudantium provident nesciunt.
+            </p>
+        </div>
+
+        <div id="caixa2">
+            <h1>Título da Caixa</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo voluptatum dolores sapiente asperiores itaque quo, odio vitae nulla magni unde sequi aliquid animi ipsam quis officia, laudantium provident nesciunt.
+            </p>
+        </div>
+
+        <img class="arredondamento" src="Minecraft_Launcher.webp" alt="" width="300">
+    </body>
+</html>
