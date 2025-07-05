@@ -1,0 +1,15 @@
+header{
+    border: 4px solid #CCC;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav{
+    border: 3px solid #CCB;
+    background-color: aqua;
+}
+
+footer{
+    border: 2px solid #CCB;
+    background-color: brown;
+}
