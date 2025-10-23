@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap - Breakpoints</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  </head>
+  <body style="margin-bottom: 200px;padding: 16px;">
+
+    
+    <!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+    -->
+    <form>
+        
+        <!-- caixas de texto -->
+        <div class="mb-3">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" placeholder="Digite seu usuário" class="form-control form-control-sm">
+        </div>
+
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" class="form-control" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="mb-3">
+            <label for="estados">Estados</label>
+            <select id="estados" class="form-control">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="mb-3">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="3" class="form-control"></textarea>
+        </div>
+
+        <!-- file input -->
+        <div class="mb-3">
+            <label for="arquivo" class="form-label">Arquivo</label>
+            <input type="file" id="arquivo" class="form-control">
+        </div>
+
+        <!-- range -->
+        <div class="mb-3">
+            <label id="range">Satisfação</label>
+            <input type="range" 
+            id="range" min="1" max="5" class="form-range">
+        </div>
+
+        <!-- button -->
+        <input type="submit" value="Salvar" class="btn btn-primary">
+
+    </form>
+    <br><br>
+
+    <!-- Formulário inline -->
+    <form class="d-flex">
+        <input type="text" placeholder="Digite seu usuário" class="form-control me-2">
+        <input type="password" placeholder="Digite sua senha" class="form-control me-2">
+        <input type="submit" value="Logar" class="btn btn-primary">
+    </form>
+    <br><br>
+
+    <!-- 
+    Validação de formulário 
+    Classes: is-valid, is-invalid, invalid-feedback
+    -->
+    <for class="form-inline">
+        
+        <div class="mb-3">
+            <label for="email-usuario">email</label>
+            <input type="text" id="email-usuario" placeholder="Digite seu e-mail" class="form-control is-valid">
+            <div class="valid-feedback">
+                Email válido
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="senha-usuario">Senha</label>
+            <input type="email" id="senha-usuario" placeholder="Digite sua senha" class="form-control is-invalid">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+
+        <input type="submit" value="Logar" class="btn btn-primary">
+
+    </form>
+
+
+
+
+
+
+
+    <!--Código JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

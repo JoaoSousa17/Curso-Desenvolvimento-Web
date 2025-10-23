@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap - Sistema Grids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style type="text/css">
+      .marcador {
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+        height: 120px;
+      }
+      .marcador-container {
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+      .borda{
+        border: 1px solid blue;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
+      <div class="row marcador align-items-end">
+        <div class="col borda">Área 1</div>
+        <div class="col borda">Área 2</div>
+        <div class="col borda">Área 3</div>
+      </div>
+
+      <h2>Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h2>
+      <div class="row marcador">
+        <div class="col borda align-self-center">Área 1</div>
+        <div class="col borda align-self-start">Área 2</div>
+        <div class="col borda align-self-end">Área 3</div>
+      </div>
+
+      <h2>Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h2>
+      <div class="row justify-content-end">
+        <div class="marcador col-2">Área 1</div>
+        <div class="marcador col-2">Área 2</div>
+        <div class="marcador col-2">Área 3</div>
+      </div>
+
+      <h2>Distribuição (justify-content-ALINHAMENTO: around, between)</h2>
+      <div class="row justify-content-between">
+        <div class="marcador col-2">Área 1</div>
+        <div class="marcador col-2">Área 2</div>
+        <div class="marcador col-2">Área 3</div>
+      </div>
+
+      <h2>Removendo espaçamento</h2>
+      <div class="row g-0">
+        <div class="borda col-2">Área 1</div>
+        <div class="borda col-2">Área 2</div>
+        <div class="borda col-2">Área 3</div>
+      </div>
+
+
+    </div>
+    
+
+    <!--Código JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
