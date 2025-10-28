@@ -1,0 +1,130 @@
+/**************
+    Layout
+**************/
+body{
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html, body, #home{
+    height: 100%;
+}
+
+/**************************
+    Barra de Navegação
+**************************/
+
+nav.navbar-transparente{
+    background: rgba(0,0,0,0.6);
+    padding: 15px 0;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: rgba(255, 255, 255, .5);
+}
+
+.divisor{
+    width: 1px;
+    background-color: white;
+    margin: 10px 15px;
+}
+
+/***********
+    Capa
+***********/
+
+.capa{
+    text-align: center;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo{
+    background-color: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background-color: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
+/*****************
+    Tipografia
+*****************/
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 6em;
+}
+
+/* X-Large devices (large desktops, MENOR que 1400px) */
+@media (max-width: 1399.98px) { 
+    h1 {
+        font-size: 6em; /* Esta regra já estava no H1 base, mas mantemos */
+    }
+}
+
+/* Large devices (desktops, MENOR que 1200px) */
+@media (max-width: 1199.98px) { 
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Medium devices (tablets, MENOR que 992px) */
+@media (max-width: 991.98px) { 
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Small devices (landscape phones, MENOR que 768px) */
+@media (max-width: 767.98px) { 
+    h1 {
+        font-size: 3em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/* X-Small devices (portrait phones, MENOR que 576px) */
+@media (max-width: 575.98px) { 
+    /* Pode adicionar um tamanho ainda menor aqui se quiser, ex: 2.5em */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
