@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+
+        <style>
+            .estilo1{
+                background-color: yellow;
+            }
+
+            .correto{
+                background-color: green;
+            }
+
+            .errado{
+                background-color: red;
+            }
+        </style>
+        
+        <script>
+            
+            function modificaBGFFocus(){
+                document.getElementById('inp').className = "estilo1"
+            }
+
+            function avaliaLength(){
+                var tam = document.getElementById('inp').value.length
+                if (tam < 3){
+                    document.getElementById('inp').className = "errado"
+                } else{
+                    document.getElementById('inp').className = "correto"
+                }
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <input type="text" name="" id="inp" onfocus="modificaBGFFocus()" onblur="avaliaLength()">
+    </body>
+</html>

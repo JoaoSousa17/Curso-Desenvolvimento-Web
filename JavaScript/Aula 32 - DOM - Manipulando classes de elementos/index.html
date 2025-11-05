@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+
+        <style>
+            .estilo1{
+                background-color: #FF0000;
+                color: #FFFFFF;
+                padding: 10px;
+                width: 200px;
+                text-align: center;
+            }
+
+            .estilo2{
+                background-color: #000FF0;
+                color: #FFFFFF;
+                padding: 20px;
+                width: 400px;
+                text-align: end;
+                font-size: 3em;
+            }
+        </style>
+        
+        <script>
+            
+            function modificarClasse(){
+                document.getElementById('mensagem').className = 'estilo2'
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        
+        <h3 id="mensagem" class="estilo1">Modificando a classe</h3>
+
+        <hr>
+
+        <button type="button" onclick="modificarClasse()">Aplicar classe</button>
+             
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+
+            function exibirArtigo(id, callbackSucesso, callbackErro){
+                if (true){
+                    callbackSucesso ("Funções de callback em JS", "Funções de callback são muito utilizadas em JS")
+                } else{
+                    callbackErro ("Erro 432 : Não me chateies! ")
+                }
+            }
+
+            var callbackSucesso = function(titulo, body){
+                document.write("<h1>" + titulo + "</h1>")
+                document.write("<hr>")
+                document.write("<p>" + body + "</p>")
+            }
+
+            var callbackErro = function(erro){
+                document.write(erro)
+            }
+
+            exibirArtigo(1, callbackSucesso, callbackErro)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
