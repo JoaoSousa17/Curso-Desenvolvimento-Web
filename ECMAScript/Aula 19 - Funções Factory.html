@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript 6</title>
+        <script>
+
+            let Bicicleta1 = {
+                cor: "Branca",
+                marcha: "Única",
+                aro: 12,
+                pedalar(){
+                    console.log(`Método pedalar executado!`)
+                }
+            }
+
+            let BicicletaFactory = function(cor, marcha, aro){
+                // lógica
+                // requisição http
+                // resposta http
+                return {
+                    cor,
+                    marcha,
+                    aro,
+                    pedalar(){
+                        console.log(`Método pedalar executado!`)
+                    }
+                }
+            }
+
+            let bic1 = BicicletaFactory("Branco", "Única", 12)
+            console.log(bic1)
+
+            let bic2 = BicicletaFactory("Preta", "21", 12)
+            console.log(bic2)
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> 

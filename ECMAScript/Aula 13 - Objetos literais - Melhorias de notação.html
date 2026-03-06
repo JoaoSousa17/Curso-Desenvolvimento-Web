@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript 6</title>
+        <script>
+
+            let nome = "Jorge"
+            let idade = 29
+            let sexo = "masculino"
+            let profissao = "programador"
+
+            let objeto = {
+                nome: nome,
+                idade: idade,
+                sexo: sexo,
+                profissao: profissao,
+                exibirResumo: function(){
+                    console.log(`${this.nome} tem ${this.idade} anos. É do sexo ${this.sexo} e trabalha como ${this.profissao}!`)
+                }
+            }
+
+            objeto.exibirResumo()
+
+            let objeto2 = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                exibirResumo(){
+                    console.log(`${this.nome} tem ${this.idade} anos. É do sexo ${this.sexo} e trabalha como ${this.profissao}!`)
+                }
+            }
+
+            objeto2.exibirResumo()
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> 

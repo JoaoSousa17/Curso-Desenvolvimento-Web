@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <button id="btnSaudacao">Saudação</button>
+        <hr>
+        <input type="text" id="cep" placeholder="CEP">
+        <button id="btnCEP">Consultar CEP</button>
+
+        <script type="module">
+            //import {saudacao, getEnderecoByCEP} from './import/lib.mjs'
+
+            document.querySelector('#btnSaudacao').addEventListener('click', async () => {
+                const modulo = await import('./import/lib2.mjs')
+
+                console.log(modulo.saudacao())
+                
+            })
+
+            document.querySelector('#btnCEP').addEventListener('click', () => {
+
+                let cep = document.querySelector('#cep').value
+
+                if(cep.length == 8){
+                    import('./import/lib.mjs').then(module => {
+                        module.getEnderecoByCEP(cep).then(dados => {
+                            console.log(dados)
+                        })
+                    })
+                }
+            })
+
+            
+            
+        </script>
+    </body>
+</html>

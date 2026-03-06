@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript 6</title>
+        <script>
+
+            class ContaBancaria {
+
+                constructor(){
+                    this.agencia = 1075
+                    this.numeroConta = 8351125
+                    this.saldo = 50
+                    this.limite = 450
+                }
+
+                depositar(val){
+                    this.saldo += val
+                }
+
+                sacar(val){
+                    this.saldo -= val
+                }
+
+                consultarSaldo(){
+                    console.log(`O seu saldo atual é: ${this.saldo}`)
+                }
+            }
+
+            let conta1 = new ContaBancaria()
+            let conta2 = new ContaBancaria()
+
+            conta1.consultarSaldo()
+            conta1.depositar(50)
+            conta1.consultarSaldo()
+            conta1.sacar(100)
+            conta1.consultarSaldo()
+            conta2.consultarSaldo()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

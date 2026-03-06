@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            obj1 = {
+                nome: 'Jorg Sant Ana',
+                profissao: 'Programador Sénior'
+            }
+
+            obj2 = {
+                nome: 'Maria Silva',
+                profissoa: "CEO"
+            }
+
+            const objetos = new WeakMap();
+
+            objetos.set(obj1, "Informações do Objeto 1");
+            objetos.set(obj2, "Informações do Objeto 2");
+
+            console.log(objetos);
+
+            obj1 = null;
+
+            console.log(objetos);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+
+            class Agenda {
+                #titulo = ''
+                eventos = []
+
+                static config = {};
+
+                constructor(titulo, eventos){
+                    this.#titulo = titulo
+                    this.eventos = eventos
+                }
+
+                static {
+                    console.log('Executando bloco estático de código!');
+                }
+
+                static{
+                    this.config = {
+                        tema: 'dark',
+                        visualizacao: 'mensal'
+                    }
+                }
+            }
+
+            const agenda = new Agenda('Cliente 1', ['Reunião 1', 'Reunião 2'])
+            console.log(agenda);
+            console.log(Agenda.config);
+
+        </script>
+    </body>
+</html>

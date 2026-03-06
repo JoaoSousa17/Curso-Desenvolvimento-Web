@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            class Pessoa{
+
+                #humor = null
+                #mensagens = [
+                    'Seja Feliz',
+                    'Não estou para conversas hoje'
+                ]
+
+                constructor(nome){
+                    this.#mudarHumor()
+                    this.nome = nome
+                }
+
+                dizerOi(){
+                    return `Olá, meu nome é ${this.nome}!`
+                }
+
+                getHumor(){
+                    return this.#humor
+                }
+
+                #mudarHumor(){
+                    this.#humor = Math.floor(Math.random() * 2)
+                }
+
+                getMensagem() {
+                    return this.#mensagens[this.#humor]
+                }
+            }
+
+            let p = new Pessoa('João')
+            console.log(p.dizerOi())
+
+            console.log(p.nome)
+            console.log(p.getHumor())
+            console.log(p.getMensagem())
+        </script>
+    </body>
+</html>

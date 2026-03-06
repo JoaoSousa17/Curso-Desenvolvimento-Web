@@ -4,42 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript</title>
-
-        <style>
-            .estilo1{
-                background-color: #FF0000;
-                color: #FFFFFF;
-                padding: 10px;
-                width: 200px;
-                text-align: center;
-            }
-
-            .estilo2{
-                background-color: #000FF0;
-                color: #FFFFFF;
-                padding: 20px;
-                width: 400px;
-                text-align: end;
-                font-size: 3em;
-            }
-        </style>
         
         <script>
             
-            function modificarClasse(){
-                document.getElementById('mensagem').className = 'estilo2'
-            }
+            //var lista_frutas = Array();
+            var lista_frutas = [];
+
+            lista_frutas[1] = "Banana";
+            lista_frutas[2] = "Maçã";
+            lista_frutas[3] = "Morango";
+            lista_frutas[4] = "Uva";
+            lista_frutas[5] = true;
+            lista_frutas[6] = 100;
+
+            //var lista_frutas = ["Banana", "Maçã", "Morango", "Uva"];
+
+            console.log(lista_frutas)
+
+            /* Diferença do length em string e array */
+            // Em array, funciona mais como se fosse "valor do próximo índice"
+
+
 
         </script>
         
     </head>
     <body>
-        
-        <h3 id="mensagem" class="estilo1">Modificando a classe</h3>
-
-        <hr>
-
-        <button type="button" onclick="modificarClasse()">Aplicar classe</button>
-             
+           
     </body>
 </html>

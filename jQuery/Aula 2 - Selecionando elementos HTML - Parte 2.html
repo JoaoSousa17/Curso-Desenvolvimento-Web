@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selecionando Elementps HTML</title>
+
+        <script src="jQuery.js"></script>
+    </head>
+    <body>
+        
+        <input type="text" class="exemplo1" name="" placeholder="Input 1" id=""><br>
+        <input type="text" name="" placeholder="Input 2" id=""><br>
+        <input type="text" name="" placeholder="Input 3" id=""><br>
+
+        <div class="lista1">
+            <div class="exemplo1">Div 1</div>
+            <div>Div 2</div>
+            <div>Div 3</div>
+        </div>
+
+        <ul class="lista1">
+            <li class="exemplo1">Opção 1</li>
+            <li class="exemplo2">Opção 2</li>
+            <li class="exemplo2">Opção 3</li>
+        </ul>
+
+        <ul class="lista2">
+            <li class="exemplo1 exemplo2">Opção 1</li>
+            <li class="exemplo2">Opção 2</li>
+            <li>Opção 3</li>
+        </ul>
+
+    </body>
+    <script>
+        
+        // Combinação de Seletores
+        console.log($('li.exemplo1'))
+
+        console.log($('.lista1 .exemplo2'))
+
+
+        console.log('Atuação sobre o array de retorno dos elementos selecionados')
+        // Atuação sobre o array de retorno dos elementos selecionados
+        console.log($('.lista1 .exemplo2'))
+        console.log($('.lista1 .exemplo2:first'))
+        console.log($('.lista1 .exemplo2:last'))
+        console.log($('.lista1 .exemplo2:odd'))
+        console.log($('.lista1 .exemplo2:even'))
+
+    </script>
+</html>

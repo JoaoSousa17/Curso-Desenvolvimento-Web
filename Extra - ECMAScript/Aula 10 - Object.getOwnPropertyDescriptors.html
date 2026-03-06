@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            let objeto = {
+                nome: 'João Sousa',
+                profissional: {
+                    site: 'joaosousa.space',
+                    profissao: 'Engenheiro Informatico'
+                },
+                hobbies: [
+                    {id: 1, hobby: 'Fazer trilhas'},
+                    {id: 2, hobby: 'Dormir'},
+                ],
+                pais: 'Portugal'
+            }
+
+            console.log(objeto)
+
+            console.log(Object.getOwnPropertyDescriptors(objeto))
+
+            /*
+            Object.defineProperty(objeto, 'nome', {
+                writable: false // Impossibilita que o valor da propriedade seja alterado; O valor atuará como constante; 
+            })
+
+            console.log(Object.getOwnPropertyDescriptors(objeto))*/
+
+            /*Object.defineProperty(objeto, 'nome', {
+                enumerable: false // A propriedade não será exibida em laços de repetição 
+            })
+
+            for (let propriedade in objeto){
+                console.log(propriedade, objeto[propriedade])
+            }*/
+
+            Object.defineProperty(objeto, 'nome', {
+                descriptable: false // A propriedade não pode ser apagada, nem alterar os descritores
+            })
+
+        </script>
+    </body>
+</html>

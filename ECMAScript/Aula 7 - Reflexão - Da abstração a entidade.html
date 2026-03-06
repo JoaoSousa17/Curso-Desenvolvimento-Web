@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript 6</title>
+        <script>
+
+            class Cadeira{
+
+                constructor(qtPernas, giratoria, cor){
+                    this.qtPernas = qtPernas
+                    this.giratoria = giratoria
+                    this.cor = cor
+                }
+
+                girarCadeira(){
+                    this.giratoria ? console.log("Girou!") : console.log("A cadeira não é giratória")
+                }
+            }    
+            
+            let cadeiras = Array()
+
+            cadeiras.push(new Cadeira(4, false, "Vermelha"))
+            cadeiras.push(new Cadeira(8, true, "Azul"))
+
+            cadeiras[0].girarCadeira()
+            cadeiras[1].girarCadeira()
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            
+            const p1 = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('P1 resolvida'), 3000)
+            })
+
+            const p2 = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('P2 resolvida'), 5000)
+            })
+
+            const p3 = new Promise((resolve, reject) => {
+                setTimeout(() => reject('P3 resolvida'), 1000)
+            })
+
+            Promise.any([p1, p2, p3])
+                .then((resolvida) => {
+                    console.log(resolvida)
+                })
+
+        </script>
+    </body>
+</html>

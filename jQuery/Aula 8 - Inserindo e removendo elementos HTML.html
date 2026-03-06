@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+
+        <script src="jQuery.js"></script>
+        <script>
+            $(document).ready(() => {
+                $('#lista1').append('<li>Item 4</li>')
+                $('#lista1').prepend('<li>Item 0</li>')
+
+                $('#lista2').prepend('<div>Item Novo</div>')
+                $('#lista2').append('<div>Item 4</div>')
+
+                $('#lista2').after('Eu fui inserido após a div!')
+                $('#lista2').before('Eu fui inserido antes da div!')
+
+                $('.item2').remove()
+            })
+        </script>
+    </head>
+    <body>        
+        <ul id="lista1">
+            <li>Item 1</li>
+            <li class="item2">Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <div id="lista2">
+            <div>Item 1</div>
+            <div class="item2">Item 2</div>
+            <div>Item 3</div>
+        </div>
+
+        <hr>
+    </body>
+</html>

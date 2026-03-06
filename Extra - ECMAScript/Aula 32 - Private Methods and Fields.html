@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+
+            class Funcionario{
+                departamento = 'RH';
+                salario = 5580.55;
+                #primeiroNome = 'João';
+                #ultimoNome = 'Silva';
+
+                #nomeCompleto(){
+                    return`${this.#primeiroNome} ${this.#ultimoNome}`
+                }
+            }
+
+            let func = new Funcionario();
+            console.log(func)
+            //console.log(func.#nomeCompleto())
+
+        </script>
+    </body>
+</html>

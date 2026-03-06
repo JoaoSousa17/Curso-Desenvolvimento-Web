@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            const promise1 = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('Promise 1 resolvida'), 2000)
+            })
+
+            const promise2 = new Promise((resolve, reject) => {
+                setTimeout(() => reject('Promise 2 rejeitada'), 2000)
+            })
+
+            const promise3 = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('Promise 3 resolvida'), 2000)
+            })
+
+            const promises = [promise1, promise2, promise3]
+
+            Promise.allSettled(promises)
+            .then(res => {
+                res.forEach(ress => {
+                    if(ress.status == 'fulfilled'){
+                        console.log(ress.value)
+                    } else {
+                        console.log(ress.reason)
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

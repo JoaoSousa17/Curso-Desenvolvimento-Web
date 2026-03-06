@@ -1,0 +1,7 @@
+{
+  "name": "Projeto - Gasolina ou Alcool",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

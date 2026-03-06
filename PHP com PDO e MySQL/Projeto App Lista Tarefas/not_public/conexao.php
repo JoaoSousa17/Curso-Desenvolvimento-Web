@@ -1,0 +1,23 @@
+<?php
+    class Conexao{
+        private $host = "mysql:host=127.0.0.1;port=3306";
+        private $dbname = 'php_com_pdo';
+        private $user = 'root';
+        private $pass = '';
+
+        public function conectar(){
+            try{
+                $conexao = new PDO(
+                    "$this->host ;dbname=$this->dbname",
+                    "$this->user",
+                    "$this->pass"
+                );
+
+                return $conexao;
+
+            } catch(PDOException $e){
+                echo '<p>' . $e->getMessage() . '</p>';
+            }
+        }
+    }
+?>

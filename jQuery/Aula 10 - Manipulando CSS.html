@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+
+        <style>
+            .campo{
+                border: none;
+                padding: 10px;
+            }
+
+            .padrao{
+                background-color: #ddd;
+            }
+
+            .erro{
+                background-color: red;
+            }
+        </style>
+
+        <script src="jQuery.js"></script>
+        <script>
+            $(document).ready(() => {
+                //$('#topo').css('background-color', '#155661').css('margin','0').css('padding','10px 20px 10px 20px')
+                $('#topo').css({'background-color': '#155661', 'margin': '0', 'padding': '10px 20px 10px 20px'})
+                $('body').css('margin', '0px')
+                $('h1').css({'color' : 'white', 'margin': '0px'})
+
+                $('input').addClass('campo padrao')
+                $('textarea').addClass('campo erro')
+
+                console.log($('textarea').hasClass('padrao'))
+                console.log($('textarea').hasClass('erro'))
+
+                $('textarea').removeClass('padrao')
+                $('textarea').removeClass('erro')
+            })
+        </script>
+    </head>
+    <body>
+		<div id="topo">
+			<h1>Barra de navegação da aplicação</h1>
+		</div>
+
+		<div>
+			<h3>Contato</h3>
+			<hr />
+
+			<p>Nome:</p>
+			<input type="text" />
+			<br />
+
+			<p>Email:</p>
+			<input type="text" />
+			<br />
+
+			<p>Mensagem:</p>
+			<textarea></textarea>
+			<br />
+
+			<button type="button">Enviar</button>
+		</div>
+	</body>
+</html>

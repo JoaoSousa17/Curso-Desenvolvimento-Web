@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            let promessa = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    let resposta_da_requisicao = {}
+
+                    if(true){
+                        resposta_da_requisicao = {
+                            codigo: 1050,
+                            erro: 'Falha de autorização'
+                        }
+                        reject(resposta_da_requisicao)
+                    }
+
+                    resposta_da_requisicao = {
+                        0: { id: 1, nome: 'Joao'},
+                        1: { id: 2, nome: 'Jose'},
+                        2: { id: 3, nome: 'Maria'},
+                    }
+
+                    resolve(resposta_da_requisicao)
+                }, 4000)
+            }).then(dados => {
+                console.log('Operação sequencial: ', dados)
+
+                return 'Paramêtro 1 para o then 2'
+            }).then(param => {
+                console.log('Then numero 2 ', param)
+            }).then(() => {
+                console.log('Then numero 3')
+            }).then(() => {
+                console.log('Then numero 4')
+            }).catch( erro => {
+                console.log(erro.codigo)
+            })
+        </script>
+    </body>
+</html>

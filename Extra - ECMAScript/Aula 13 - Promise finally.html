@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+        <script>
+            let p = new Promise((resolve, reject) => {
+                if (true){
+                    reject('Rejeitada')
+                }
+
+                resolve('Resolvida')
+            })
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((res) => {
+                console.log(res)
+            })
+            .finally(() => {
+                console.log('Fluxo se rejeitado ou resolvido')
+            })
+            .then((res) => {
+                console.log('Then após o finally')
+            })
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript 6</title>
+        <script>
+
+            /*class Carro {
+                constructor(){
+                    this.cor,
+                    this.modelo,
+                    this.velocidadeAtual,
+                    this.velocidadeMaxima
+                }
+
+                acelerar(){
+
+                }
+
+                get velocidadeAtual(){
+
+                }
+
+                get velocidadeMaxima(){
+
+                }
+            }
+
+            let car = {
+                cor,
+                modelo,
+                velocidadeAtual,
+                velocidadeMaxima,
+                acelerar(){ },
+                getVelocidademaxima() { },
+                getVelocidadeAtual() { }
+            }*/
+
+            let Car = function(){
+                // Atributos
+                this.cor = "Amarelo",
+                this.modelo = "Polo",
+                this.velocidadeAtual = 0,
+                this.velocidadeMaxima = 170,
+
+                // Métodos
+                this.acelerar = function(){
+                    this.setVelocidadeAtual(this.getVelocidadeAtual() + 10)
+                },
+                this.setVelocidadeAtual = function(vel) {
+                    this.velocidadeAtual = vel
+                },
+                this.getVelocidadeAtual = function() {
+                    return this.velocidadeAtual
+                }
+            }
+
+            let carro = new Car
+
+            console.log(carro.getVelocidadeAtual())
+            carro.acelerar()
+            console.log(carro.getVelocidadeAtual())
+            carro.acelerar()
+            console.log(carro.getVelocidadeAtual())
+            carro.acelerar()
+            console.log(carro.getVelocidadeAtual())
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> 
